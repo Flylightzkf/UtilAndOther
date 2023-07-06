@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="UtilAndOther" />
+        <module name="assembly_plugin_demo" />
+        <module name="progress_bar_demo" />
+        <module name="file_view_demo" />
+        <module name="datebase_doc_demo" />
+        <module name="powerjob-demo" />
+        <module name="design-model" />
+        <module name="wu-core-common" />
+        <module name="http_request_demo" />
+        <module name="local_cache_demo" />
+        <module name="mail_send_demo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="datebase_doc_demo" options="-parameters" />
+      <module name="file_view_demo" options="-parameters" />
+      <module name="http_request_demo" options="-parameters" />
+    </option>
+  </component>
+</project>

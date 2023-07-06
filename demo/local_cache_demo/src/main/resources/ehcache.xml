@@ -1,0 +1,46 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         dynamicConfig="true"
+         maxBytesLocalHeap="50M"  maxBytesLocalDisk="200M"
+         updateCheck="false">
+
+<!--
+    eternal: 缓存是否永久有效，如果为 true 则忽略timeToIdleSeconds 和 timeToLiveSeconds
+    maxElementsInMemory：最多缓存多少个key
+    overflowToDisk: 缓存超限时是否写入磁盘
+    diskPersistent：缓存是否持久化
+    timeToLiveSeconds：缓存多久过期
+    timeToIdleSeconds：缓存多久没有被访问就过期
+    diskExpiryThreadIntervalSeconds：磁盘缓存过期检查线程运行时间间隔
+    memoryStoreEvictionPolicy：缓存淘汰策略, LFU:最近最少使用的元素先移出; FIFO:最先进入的元素被移出; LRU:使用越少的元素被移出
+    maxBytesLocalHeap：缓存最大占用内存，0表示不限制
+-->
+
+    <defaultCache
+            eternal="false"
+            maxBytesLocalHeap="50M"
+            maxBytesLocalDisk="200M"
+            overflowToDisk="false"
+            diskPersistent="false"
+            timeToLiveSeconds="3600"
+            timeToIdleSeconds="0"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"/>
+
+    <cache
+            name="user"
+            eternal="false"
+            maxBytesLocalHeap="50M"
+            maxBytesLocalDisk="200M"
+            overflowToDisk="false"
+            diskPersistent="false"
+            timeToLiveSeconds="3600"
+            timeToIdleSeconds="0"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"
+    />
+
+<!--    存储到磁盘时的路径-->
+    <diskStore path="D:\Study_Java\ehcache" />
+
+</ehcache>

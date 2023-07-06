@@ -1,0 +1,16 @@
+# 应用名称
+spring:
+  application:
+    name: datebase_doc_demo
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    name: defaultDataSource
+    url: jdbc:mysql://127.0.0.1:3306/csdn?serverTimezone=UTC
+    username: root
+    password: password
+    xa:
+      properties:
+        useInformationSchema: true
+
+server:
+  port: 8080

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件预览</title>
+    <script src="js/jQuery3.6.1.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-base64@3.6.0/base64.min.js"></script>
+</head>
+<body>
+<div >
+    <a onclick="openWord(1)">预览word</a><br>
+    <a onclick="openWord(2)">预览excel</a><br>
+    <a onclick="openWord(3)">预览txt</a><br>
+    <a onclick="openWord(4)">预览pdf</a><br>
+    <a onclick="openWord(5)">预览png</a><br>
+    <a onclick="openWord(6)">预览md</a><br>
+</div>
+
+</body>
+<script>
+    // 文件上传
+    function openWord(type) {
+        var name = "";
+        switch (type){
+            case 1: name="file.docx";break;
+            case 2: name="file.xlsx";break;
+            case 3: name="file.txt";break;
+            case 4: name="file.pdf";break;
+            case 5: name="file.png";break;
+            case 6: name="file.md";break;
+        }
+        var url = 'http://36.57.187.44:8080/file/'+name; //要预览文件的访问地址
+        // 192.168.10.101 本机Ip
+        window.open('http://119.8.42.118:8012/onlinePreview?url='+encodeURIComponent(Base64.encode(url)));
+    }
+
+</script>
+</html>

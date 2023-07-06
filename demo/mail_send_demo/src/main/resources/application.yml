@@ -1,0 +1,27 @@
+# 应用名称
+spring:
+  application:
+    name: mail_send_demo
+# spring-boot-starter-mail配置项
+  mail:
+    host: smtp.qq.com
+    username: xxx@qq.com
+    password: xxx
+    default-encoding: UTF-8
+    properties.mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+    # 打印邮件发送过程，生产环境关闭
+    properties.mail.debug: true
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+# commons.mail自定义配置项
+email:
+  smtp:
+    host: smtp.qq.com
+    email: xxx@qq.com
+    name: 邮件提醒系统
+    password: xxx
+    port: 25
+
