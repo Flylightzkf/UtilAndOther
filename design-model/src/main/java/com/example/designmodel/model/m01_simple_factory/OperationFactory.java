@@ -23,6 +23,7 @@ public class OperationFactory {
                 operation = new Div();
                 break;
             default:
+                System.out.println("传入格式错误");
         }
         return operation;
     }
