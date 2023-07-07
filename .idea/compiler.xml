@@ -13,7 +13,6 @@
         <module name="design-model" />
         <module name="Util" />
         <module name="jetcache-demo" />
-        <module name="wu-core-common" />
         <module name="local_cache_demo" />
         <module name="mail_send_demo" />
         <module name="assembly_plugin_demo" />
@@ -23,6 +22,10 @@
         <module name="http_request_demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tool" target="8" />
+      <module name="wu-core-common" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
