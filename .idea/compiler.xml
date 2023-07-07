@@ -11,11 +11,11 @@
         <module name="datebase_doc_demo" />
         <module name="powerjob-demo" />
         <module name="design-model" />
+        <module name="Util" />
         <module name="jetcache-demo" />
         <module name="wu-core-common" />
         <module name="local_cache_demo" />
         <module name="mail_send_demo" />
-        <module name="UtilAndOther" />
         <module name="assembly_plugin_demo" />
         <module name="progress_bar_demo" />
         <module name="flyway_demo" />

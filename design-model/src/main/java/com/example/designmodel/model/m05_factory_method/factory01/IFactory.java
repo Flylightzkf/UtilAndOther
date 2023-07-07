@@ -8,5 +8,5 @@ import com.example.designmodel.model.m01_simple_factory.Operation;
  * @date 2023/4/18
  */
 public interface IFactory {
-    public Operation createOperation(String operate);
+     Operation createOperation(String operate);
 }
